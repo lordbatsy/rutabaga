@@ -1,0 +1,4 @@
+url (id int primary key, page int references page, url varchar not null, text varchar not null, typ varchar not null)
+image (id int primary key, page int references page, path varchar(255) not null)
+category (link_name varchar(100) primary key, title varchar not null)
+page (thumbnail varchar(255) not null, title varchar not null, description varchar not null, upload_date char(10), category int references category)
